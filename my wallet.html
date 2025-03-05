@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e1010;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wallet-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #0bec95;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 35px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .balance {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .actions button {
+            padding: 30px;
+            border: none;
+            background-color: #007bff;
+            color: #050a0a;
+            cursor: pointer;
+            border-radius: 35px;
+            font-size: 16px;
+        }
+
+        .actions button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wallet-container">
+        <h1>Mobile Wallet</h1>
+        <div class="balance">
+            Balance: <span id="balanceAmount">$</span>
+        </div>
+        <div class="actions">
+            <button onclick="openSendMoneyPage()">Lacag Dirid</button>
+            <button onclick="openWithdrawPage()">Lacag Labixid</button>
+            <button onclick="openExchangePage()">Exchange</button>
+            <button onclick="openViewMovementPage()">View Movement</button>
+        </div>
+    </div>
+
+    <script>
+        // Function si loo furo bogga Lacag Dirida
+        function openSendMoneyPage() {
+            window.open("send money.html", "_blank");
+        }
+
+        // Function si loo furo bogga Lacag Labixida
+        function openWithdrawPage() {
+            window.open("withdraw.html", "_blank");
+        }
+
+        // Function si loo furo bogga Exchange
+        function openExchangePage() {
+            window.open("sarrf.html", "_blank");
+        }
+
+        // Function si loo furo bogga View Movement
+        function openViewMovementPage() {
+            window.open("movement.html", "_blank");
+        }
+    </script>
+</body>
+</html>
